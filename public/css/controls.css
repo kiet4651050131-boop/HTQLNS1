@@ -1,0 +1,41 @@
+#portalApp .btn-primary-blue,
+#portalApp .btn-secondary-outline,
+#portalApp .btn-logout-header,
+#portalApp .btn-figma-dark,
+#portalApp .notification-button,
+#portalApp .figma-filter-pill,
+.btn-demo-view,
+.btn-demo-close {
+  font-family: inherit;
+  letter-spacing: normal;
+  box-shadow: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+#portalApp .btn-figma-dark,
+#portalApp .btn-logout-header,
+.btn-demo-view {
+  border-radius: 6px !important;
+}
+
+.btn-demo-close {
+  border-radius: 4px;
+}
+
+.demo-screen-bar {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.16);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.btn-demo-view:hover {
+  transform: none;
+}
+
+#portalApp button:focus-visible,
+#portalApp a.figma-nav-item:focus-visible,
+.demo-screen-bar button:focus-visible {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}

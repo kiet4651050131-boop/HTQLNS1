@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title description">
+  <title id="title">HRMS - Hệ thống quản lý nhân sự: Use Case Diagram</title>
+  <desc id="description">Sơ đồ UML gồm nhân viên, quản lý, nhân sự, quản trị viên và các use case đăng nhập, đổi mật khẩu, xem danh sách tài khoản, gán vai trò tài khoản.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #000; }
+    .boundary, .usecase, .association, .actor-line, .actor-head { stroke: #000; stroke-width: 2; }
+    .boundary { fill: none; }
+    .usecase { fill: #fff; }
+    .association, .actor-line, .actor-head { fill: none; stroke-linecap: round; }
+    .system-name { font-size: 23px; font-weight: 700; }
+    .usecase-label { font-size: 18px; }
+    .actor-label { font-size: 16px; text-anchor: middle; }
+  </style>
+
+  <rect x="300" y="45" width="765" height="650" fill="#fff"/>
+
+  <g class="association">
+    <line x1="155" y1="170" x2="455" y2="230"/>
+    <line x1="155" y1="170" x2="725" y2="230"/>
+    <line x1="155" y1="310" x2="455" y2="230"/>
+    <line x1="155" y1="310" x2="725" y2="230"/>
+    <line x1="155" y1="450" x2="455" y2="230"/>
+    <line x1="155" y1="450" x2="725" y2="230"/>
+    <line x1="155" y1="450" x2="455" y2="510"/>
+    <line x1="155" y1="590" x2="455" y2="230"/>
+    <line x1="155" y1="590" x2="725" y2="230"/>
+    <line x1="155" y1="590" x2="455" y2="510"/>
+    <line x1="155" y1="590" x2="725" y2="510"/>
+  </g>
+
+  <rect class="boundary" x="300" y="45" width="765" height="650"/>
+  <text class="system-name" x="682" y="90" text-anchor="middle">HRMS - Hệ thống quản lý nhân sự</text>
+
+  <g class="usecase">
+    <ellipse cx="535" cy="230" rx="125" ry="48"/>
+    <ellipse cx="805" cy="230" rx="130" ry="48"/>
+    <ellipse cx="535" cy="510" rx="125" ry="48"/>
+    <ellipse cx="805" cy="510" rx="135" ry="48"/>
+  </g>
+  <g class="usecase-label" text-anchor="middle">
+    <text x="535" y="236">Đăng nhập</text>
+    <text x="805" y="236">Đổi mật khẩu</text>
+    <text x="535" y="516">Xem danh sách tài khoản</text>
+    <text x="805" y="516">Gán vai trò tài khoản</text>
+  </g>
+
+  <g>
+    <circle class="actor-head" cx="125" cy="140" r="16"/>
+    <path class="actor-line" d="M125 156 V194 M101 170 H149 M125 194 L105 220 M125 194 L145 220"/>
+    <text class="actor-label" x="125" y="246">Nhân viên</text>
+    <text class="actor-label" x="125" y="266">(Employee)</text>
+
+    <circle class="actor-head" cx="125" cy="280" r="16"/>
+    <path class="actor-line" d="M125 296 V334 M101 310 H149 M125 334 L105 360 M125 334 L145 360"/>
+    <text class="actor-label" x="125" y="386">Quản lý</text>
+    <text class="actor-label" x="125" y="406">(Manager)</text>
+
+    <circle class="actor-head" cx="125" cy="420" r="16"/>
+    <path class="actor-line" d="M125 436 V474 M101 450 H149 M125 474 L105 500 M125 474 L145 500"/>
+    <text class="actor-label" x="125" y="526">Nhân sự (HR)</text>
+
+    <circle class="actor-head" cx="125" cy="560" r="16"/>
+    <path class="actor-line" d="M125 576 V614 M101 590 H149 M125 614 L105 640 M125 614 L145 640"/>
+    <text class="actor-label" x="125" y="666">Quản trị viên</text>
+    <text class="actor-label" x="125" y="686">(Admin)</text>
+  </g>
+</svg>
